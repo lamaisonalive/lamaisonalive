@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LA MAISON ALIVE — RemoRR SK | Je suis Alive. Et vous ?</title>
+<style>
+  :root {
+    --anthracite: #1E2023;
+    --anthracite-card: #26292D;
+    --gold: #C59B48;
+    --gold-light: #DFBD74;
+    --gold-dark: #9E7328;
+    --ivory: #F4F1EA;
+    --muted: #A6A39D;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background-color: var(--anthracite);
+    color: var(--ivory);
+    font-family: 'Georgia', 'Times New Roman', serif;
+    line-height: 1.75;
+    padding: 20px;
+  }
+  .outer-frame {
+    max-width: 960px;
+    margin: 0 auto;
+    border: 2px solid var(--gold);
+    padding: 8px;
+  }
+  .inner-frame {
+    border: 1px solid rgba(197, 155, 72, 0.45);
+    padding: 50px 30px;
+    text-align: center;
+  }
+  .brand-header {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 30px;
+  }
+  .monogram-box {
+    width: 110px;
+    height: 110px;
+    margin: 0 auto 30px;
+  }
+  h1 {
+    font-size: 42px;
+    font-weight: normal;
+    letter-spacing: 3px;
+    color: var(--ivory);
+    margin-bottom: 8px;
+  }
+  .subtitle {
+    font-size: 26px;
+    font-style: italic;
+    color: var(--gold-light);
+    margin-bottom: 24px;
+  }
+  .tagline {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 18px;
+  }
+  .motto {
+    font-size: 15px;
+    font-style: italic;
+    color: var(--gold);
+    margin-bottom: 40px;
+  }
+  .divider {
+    width: 80px;
+    height: 1px;
+    background: var(--gold);
+    margin: 40px auto;
+  }
+  .story-section {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 16.5px;
+    color: #E5E2DC;
+  }
+  .story-section p {
+    margin-bottom: 18px;
+  }
+  .highlight-gold {
+    color: var(--gold-light);
+    font-weight: bold;
+  }
+  .memorial-box {
+    max-width: 720px;
+    margin: 45px auto;
+    background: var(--anthracite-card);
+    border-left: 3px solid var(--gold);
+    border-right: 1px solid rgba(197, 155, 72, 0.25);
+    border-top: 1px solid rgba(197, 155, 72, 0.25);
+    border-bottom: 1px solid rgba(197, 155, 72, 0.25);
+    padding: 28px 26px;
+    text-align: left;
+  }
+  .memorial-title {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 10px;
+  }
+  .memorial-box h2 {
+    font-size: 22px;
+    font-weight: normal;
+    color: var(--ivory);
+    margin-bottom: 14px;
+  }
+  .memorial-box p {
+    font-size: 15px;
+    color: #D2CFC8;
+    margin-bottom: 10px;
+  }
+  .editions-title {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin: 50px 0 30px;
+  }
+  .editions-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    justify-content: center;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  .edition-card {
+    background: var(--anthracite-card);
+    border: 1px solid rgba(197, 155, 72, 0.4);
+    padding: 28px 22px;
+    flex: 1 1 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .edition-card.featured {
+    border: 2px solid var(--gold);
+  }
+  .badge {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 10px;
+  }
+  .edition-card h3 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 8px;
+  }
+  .cover-tag {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 11px;
+    color: var(--gold-light);
+    font-style: italic;
+    margin-bottom: 14px;
+  }
+  .price {
+    font-size: 28px;
+    color: var(--gold);
+    margin: 12px 0 16px;
+  }
+  .edition-desc {
+    font-size: 14px;
+    color: var(--muted);
+    margin-bottom: 24px;
+  }
+  .btn {
+    display: inline-block;
+    padding: 13px 20px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid var(--gold);
+    color: var(--gold-light);
+    transition: all 0.25s ease;
+  }
+  .btn-primary {
+    background: var(--gold);
+    color: var(--anthracite);
+    font-weight: bold;
+  }
+  .btn:hover {
+    background: var(--gold-light);
+    color: var(--anthracite);
+  }
+  .footer {
+    margin-top: 60px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(197, 155, 72, 0.3);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .footer-links {
+    margin: 16px 0;
+  }
+  .footer-links a {
+    color: var(--gold-light);
+    text-decoration: none;
+    margin: 0 12px;
+    letter-spacing: 1px;
+  }
+  @media (max-width: 600px) {
+    .inner-frame { padding: 32px 16px; }
+    h1 { font-size: 30px; }
+    .subtitle { font-size: 21px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="outer-frame">
+  <div class="inner-frame">
+    <div class="brand-header">Éditions de la Maison Alive</div>
+
+    <!-- Monogramme Vectoriel L'Éclat de l'Impact -->
+    <div class="monogram-box">
+      <svg viewBox="0 0 120 120" xmlns="http://w3.org">
+        <defs>
+          <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#DFBD74"/>
+            <stop offset="50%" stop-color="#C59B48"/>
+            <stop offset="100%" stop-color="#9E7328"/>
+          </linearGradient>
+        </defs>
+        <circle cx="60" cy="60" r="56" fill="none" stroke="url(#goldGrad)" stroke-width="1.5"/>
+        <!-- Jambe gauche gris anthracite -->
+        <polygon points="56,22 30,96 42,96 60,42" fill="#4A4E54"/>
+        <!-- Barre horizontale -->
+        <polygon points="43,72 77,72 75,78 41,78" fill="url(#goldGrad)"/>
+        <!-- Jambe droite frappée d'or -->
+        <polygon points="60,22 64,22 90,96 76,96 58,42" fill="url(#goldGrad)"/>
+        <!-- Vecteur de l'impact -->
+        <line x1="25" y1="88" x2="95" y2="30" stroke="#F4F1EA" stroke-width="1.5" opacity="0.85"/>
+      </svg>
+    </div>
+
+    <h1>JE SUIS ALIVE.</h1>
+    <div class="subtitle">Et vous ?</div>
+    <div class="tagline">Plus qu'un survivant. Vivant. — Mes cicatrices sont mon armure.</div>
+    <div class="motto">RemoRR SK — San kombin’ Doubout’Dèyè Ça — Stand up behind that until death</div>
+
+    <div class="divider"></div>
+
+    <div class="story-section">
+      <p><span class="highlight-gold">1er mai 2007. Lauricisque, Guadeloupe.</span> Né le 8 décembre 1985, un jeune homme de <span class="highlight-gold">vingt et un ans</span> fait face au canon d'un fusil à pompe à bout portant. Alors que la foule fuit pour sauver sa peau, un cri en créole déchire l'air : <em>« Non pa fè-y sa ! »</em> Il détourne la mort qui allait frapper son ami et prend la cartouche de plein fouet.</p>
+      <p>Condamné par les médecins à ne plus jamais marcher ni tenir assis, <span class="highlight-gold">RemoRR SK</span> livre bien plus qu'un témoignage. De seize années de combat silencieux contre le syndrome de la queue de cheval à son parcours de père debout pour son fils (né en 2006 en Guadeloupe) et sa fille (née en 2020 à Montpellier), il raconte la victoire de l'esprit sur l'adversité.</p>
+      <p>De ces cicatrices est née <span class="highlight-gold">La Maison Alive</span> : une philosophie où la blessure cesse d'être un fardeau caché pour devenir une armure d'or.</p>
+    </div>
+
+    <div class="memorial-box">
+      <div class="memorial-title">Mémoire de Pierre et d'Âme • 1972 — 2021</div>
+      <h2>Hommage aux Trois Tours Gabarre de Lauricisque</h2>
+      <p>Édifiées entre 1972 et 1975 à Pointe-à-Pitre, ces trois tours de dix-neuf étages — longtemps les plus hauts édifices résidentiels de Guadeloupe — ont abrité toute une génération de familles entre mangrove et port de pêche.</p>
+      <p>Démolies entre 2019 et 2021, elles ont disp
